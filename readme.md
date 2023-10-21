@@ -8,7 +8,7 @@ RUN docker-php-ext-install sockets \
 ```
 
 
-No `composer.json` adicionar:
+No `composer.json` adicionar [https://packagist.org/packages/php-amqplib/php-amqplib](https://packagist.org/packages/php-amqplib/php-amqplib):
 - "php-amqplib/php-amqplib":"^3.5"
 
 
@@ -42,6 +42,17 @@ RABBITMQ_VHOST=/
 ```
 
 ## Comandos
+
+- Criar pastas
+```sh
+mkdir rabbitmq && mkdir rabbitmq/data 
+```
+
+- Ajustar .envs
+```sh
+cp app1/.env.example app1/.env &&
+cp app2/.env.example app2/.env
+```
 
 - Fazer build do ambiente
 ```sh
