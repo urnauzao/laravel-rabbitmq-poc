@@ -1,0 +1,2 @@
+#*/15 * * * *  php /var/www/app/artisan schedule:run > /var/www/app/storage/logs/crontab.log
+*/15 * * * *  /usr/local/bin/php /var/www/app/artisan schedule:run >> /var/www/app/storage/logs/crontab.log 2>&1

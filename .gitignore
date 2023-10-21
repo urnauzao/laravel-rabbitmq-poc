@@ -1,0 +1,9 @@
+app1/vendor
+app1/node_modules
+app1/storage/logs/*.log
+app2/vendor
+app2/node_modules
+app2/storage/logs/*.log
+rabbitmq/data/mnesia/*
+rabbitmq/data/.erlang.coockie
+rabbitmq/data/*
