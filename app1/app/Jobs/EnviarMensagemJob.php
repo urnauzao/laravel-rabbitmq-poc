@@ -18,7 +18,8 @@ class EnviarMensagemJob implements ShouldQueue
      */
     public function __construct(private string $mensagem)
     {
-        //
+        $this->onQueue('mensagens');
+        $this->onConnection('rabbitmq');
     }
 
     /**
