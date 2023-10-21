@@ -24,7 +24,7 @@ services:
             CACHE_DRIVER: 'redis'
             SESSION_DRIVER: 'redis'
         volumes:
-        #     - './app1/docker/supervisord/supervisord.octane.conf:/etc/supervisor/conf.d/supervisord.conf'
+            - './app1/docker/supervisord/supervisord.octane.conf:/etc/supervisor/conf.d/supervisord.conf'
             # - './app1/config/horizon.php:/var/www/app/config/horizon.php'
             # - './app1/.env:/var/www/app/.env'
             - './app1:/var/www/app'
@@ -59,7 +59,7 @@ services:
             CACHE_DRIVER: 'redis'
             SESSION_DRIVER: 'redis'
         volumes:
-            # - './docker/supervisord/supervisord.octane.conf:/etc/supervisor/conf.d/supervisord.conf'
+            - './app2/docker/supervisord/supervisord.octane.conf:/etc/supervisor/conf.d/supervisord.conf'
             # - './config/horizon.php:/var/www/app/config/horizon.php'
             # - './app2/.env:/var/www/app/.env'
             - './app2:/var/www/app'
